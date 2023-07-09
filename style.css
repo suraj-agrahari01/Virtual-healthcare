@@ -1,0 +1,1075 @@
+@font-face {
+    font-family: 'Mulish'; /* sets the name of the font family to Mulish */
+    src: url(https://fonts.gstatic.com/s/mulish/v1/0nksC9PmuvoxAIX2CFsVbM4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+    /* specifies the URL of the font file in WOFF2 format */
+   
+  }
+  
+  
+  body {
+
+    font-style: normal; /* sets the font style of the body text to normal */
+    font-family: 'Mulish', sans-serif; 
+    position: relative;
+}
+
+
+header{
+    padding: 20px 10px 0px 200px;
+}
+
+
+
+nav {
+    display: flex; /* sets the display property of the nav element to flex */
+    justify-content: space-between; /* horizontally distributes the child elements of nav with space between each element */
+    margin-right: 20px; 
+}
+
+.nav-list {
+    display: flex; 
+    gap: 10px; /* sets the gap (or space) between the child elements  */
+    align-content: center; /*  centering the items vertically */
+}
+
+
+.nav-list a {
+    font-weight: 700; 
+    font-size: 18px; 
+    line-height: 23px; 
+    display: flex; 
+    color: #b6afc6; 
+    text-decoration: none; /* removes the underline from the anchor elements inside .nav-list */
+    padding: 10px; 
+    margin-right: 10px; 
+}
+
+
+.nav-list a:active {
+    color: #000000; 
+    
+}
+
+.active {
+    color: #000000 !important; /* sets the text color of the .active class to black with !important, overriding other color declarations */
+}
+
+.nav-list a:hover {
+    color: #1F1534; /* changes the text color of the anchor elements inside .nav-list to #1F1534 on hover */
+}
+
+/* Responsive styles for header and nav bar*/
+
+
+@media screen and (max-width: 768px) {
+    header {
+      padding: 20px 10px 0px; 
+    }
+  
+    nav {
+      flex-direction: column; /* Change the flex direction to vertical for smaller screens */
+      align-items: center; /* Center the child elements vertically */
+      margin-right: 0; 
+    }
+  
+    .nav-list {
+      flex-wrap: wrap; /* Allow the child elements to wrap onto multiple lines */
+      justify-content: center; /* Center the child elements horizontally */
+      gap: 5px; /* Reduce the gap between the child elements */
+    }
+  
+    .nav-list a {
+      padding: 5px; /* Reduce the padding */
+      margin-right: 0; /* Remove the right margin */
+    }
+
+    
+  }
+  
+
+/* scroll to top button  */
+#scrollToTopBtn {
+    
+    position: fixed; 
+    top: 50%; /* Align to the vertical center of the viewport */
+    right: -20px; 
+    transform: translateY(-50%); /* Center align the button vertically */
+    z-index: 9999; /* Set a high z-index value */
+    border: none; /* Remove the border */
+    outline: none; /* Remove the outline */
+    background-color: transparent; 
+    cursor: pointer; /* Change the cursor to a pointer */
+  }
+
+  /* Responsive styles for scroll button */
+  @media screen and (max-width: 768px) {
+
+    #scrollToTopBtn {
+    
+    visibility: hidden;
+  }
+    
+  }
+
+
+/*Virtual healthcare heading  */
+
+.heading {
+    display: flex; 
+    justify-content: space-between; /* positions the child elements with space between them */
+    margin-top: 84px;
+}
+
+.elements{
+    position: absolute;
+    top: 160px;
+}
+
+
+.heading-title {
+    display: flex; 
+    flex-direction: column; /* sets the flex-direction to column */
+    padding: 100px 0px 0px 200px; 
+    align-items: center; 
+    text-align: left; 
+    font-weight: 700; 
+    font-size: 48px; 
+    line-height: 56px; 
+}
+
+.title {
+    padding: auto;
+    position: absolute;
+    width: 426px;
+    height: 112px;
+    left: 221px;
+    top: 289px;
+
+    
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+    
+}
+
+.heading-content{
+    
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+
+    position: absolute;
+
+    width: 450px;
+    height: 96px;
+    left: 221px;
+
+    top: 426px;
+    text-align: justify;
+    margin-top: 50px;
+}
+
+.consult-button{
+   
+    margin-top: 50px;
+    border: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px ;  
+    gap: 10px;
+    position: absolute;
+    height: 60px;
+    left: 221px;
+    top: 569px;
+
+    background: #458FF6;
+    border-radius: 55px;
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Set the style for the button when it's hovered over */
+.consult-button:hover{
+    
+    filter: brightness(0.8); /* Dim the button by reducing its brightness */
+}
+
+  
+
+@media screen and (max-width: 768px) {
+    .heading {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px; 
+    }
+  
+    .elements {
+        display: none; /* Hide the .elements element */
+      }
+      
+      .heading img {
+        max-width: 100%; /* Make the image responsive and fit within the screen width */
+        height: auto; /* Maintain the image's aspect ratio */
+      }
+    .heading-title {
+      padding: 50px 0; 
+      text-align: center; /* Center align the text */
+    }
+  
+    .title {
+      position: static; 
+      width: auto; 
+      left: 0; /* Remove the left positioning */
+      top: 0; /* Remove the top positioning */
+      margin-top: 20px; /* Adjust the top margin */
+    }
+  
+    .heading-content {
+      position: static; /* Remove the absolute positioning for smaller screens */
+      width: auto; /* Adjust the width to fit the content */
+      left: 0; 
+      top: 0; 
+      text-align: center; 
+      margin-top: 20px; 
+    }
+  
+    .consult-button {
+      position: static;
+      width: auto; 
+      left: 0;
+      top: 0;
+      margin-top: 20px; 
+    }
+  }
+
+
+/*  Our service heading and cards */
+.service{
+    display: flex;  
+    flex-direction: column;  /* Stack items vertically */
+    margin: 100px 200px;  
+}
+
+.vector-bg{
+    position: absolute;
+    z-index: -1;
+    margin-left:-200px ;
+    margin-top: -20px;
+}
+
+.service-title{
+    display: flex;  
+    font-weight: 700;  
+    font-size: 36px;  
+    margin: 0 auto;
+}
+
+.service-content{
+    color: #7d7987;  
+    font-weight: 300;  
+    font-size: 18px;  
+    line-height: 30px;  
+    text-align: center;  
+    margin-bottom: 90px;
+}
+
+.column {
+    width: fit-content; /* Set the width of the element to fit its contents */
+}
+
+.card {
+    display: flex; 
+    flex-direction: column; /* Set the direction of the flexbox to column */
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4); /* Add a box shadow to the element */
+    border-radius: 20px; /* Add a rounded border to the element */
+    padding: 50px 0px 0px 50px; 
+    background-color: #ffffff; 
+    border-radius: 10px; /* Add a rounded border to the element */
+    width: 270px; 
+    height: 300px; 
+}
+
+.card-title {
+    /* Set the width and height of the card title */
+    width: 350px;
+    height: 56px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 56px;
+    /* Add top margin to the card title */
+    margin-top: 20px;
+}
+
+.card-description {
+    
+    color: #7d7987;
+    width: 266px;
+    height: 84px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+} 
+
+
+.service-data{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+    margin:0 auto;
+    padding-left: 10px;
+}
+
+/* Responsive styles for our service*/
+
+
+@media screen and (max-width: 768px) {
+    .service {
+      margin: 50px;
+    }
+  
+    .service-title {
+      font-size: 28px;
+    }
+    .vector-bg{
+    visibility: hidden;
+}
+  
+    .card {
+      width: 100%;
+      padding: 30px;
+      height: auto;
+    }
+  
+    .card-title {
+      font-size: 20px;
+      line-height: 40px;
+    }
+  
+    .card-description {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+
+/* Leading healthcare providers */
+
+.healthcare {
+
+    display: flex;
+    margin-top: 250px;
+    padding-left: 100px;
+    gap: 140px;
+}
+
+.healthcare-img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.healthcare-title {
+    
+    display: flex;
+   
+    flex: 0.6;/* Set the flex property to 0.6, which takes up 60% of the available space */
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    align-items: start;
+    justify-self: start;
+    
+}
+
+
+
+/* Select an element with the class 'healthcare-content' */
+.healthcare-content {
+    
+    display: flex;
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* Select an element with the class 'Learnmore-button' */
+.Learnmore-button {
+ 
+    width: 200px;
+    height: 60px;
+    border: 1.6px solid #458FF6;    
+    border-radius: 55px; /* Set the border-radius to create rounded corners */
+    background-color: white;
+    color: #458FF6;
+    line-height: 60px;/* Set the line-height to vertically center the text */
+    font-weight: 700;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;/* Add a transition effect on the box-shadow property */
+}
+
+
+/* hovers 'Learnmore-button'  */
+.Learnmore-button:hover {
+    box-shadow: 0 0 1px 1px #458FF6;
+}
+
+
+
+/* Responsive styles for Leading healthcare */
+
+@media screen and (max-width: 768px) {
+    .healthcare {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 50px;
+    }
+    
+    .healthcare-title {
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+    
+    .healthcare-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    .Learnmore-button {
+        margin-top: 50px;
+    }
+}
+
+
+
+
+/* Download our mobile apps*/
+
+.mobile-apps{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+
+}
+
+/* Select an element with the class 'mobile-apps-title' */
+.mobile-apps-title{
+    margin-top: 100px;
+    display: flex;
+    flex: 0.6;/* Take up 60% of available horizontal space */
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    padding:100px 0px 0px 200px;
+
+
+    width: 254px;
+    height: 96px;
+    left: 280px;
+    top: 3060px;
+
+
+
+}
+.mobile-apps-content{/* Select an element with the class 'mobile-apps-content' */
+    display: flex;
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    width: 420px;
+    height: 120px;
+}
+
+
+.Download-button{
+    margin-top: 50px;
+    width: 200px;
+    height: 60px;
+    border: 1.6px solid #458FF6;/* Sets the border properties of the button */
+    border-radius: 55px;
+    background-color: white;
+
+    left: 280px;
+    top: 3379px;
+        
+    color: #458FF6;
+    line-height: 60px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out; /* Adds transition effects to the button */
+
+}
+
+.Download-button:hover{
+    box-shadow: 0 0 1px 1px #458FF6; /* Adds a glow effect to the button when hovered */
+  
+}
+.Download-button img{
+    padding-left: 10px;/* Adds 10 pixels of padding to the left of the image */
+}
+
+.element{
+    display: flex;
+    align-items: right;
+}
+
+/* Responsive styles for mobile app */
+@media screen and (max-width: 768px) {
+    .mobile-apps {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mobile-apps-title {
+      padding: 50px 0 0 0;
+      text-align: center;
+      
+    }
+    .mobile-apps-title hr{
+        left: auto;
+        right: auto;
+        height: auto;
+    
+      }
+  
+    .mobile-apps-content {
+      width: auto;
+      height: auto;
+    }
+  
+    .Download-button {
+      left: auto;
+      top: auto;
+      margin-top: 30px;
+    }
+
+    .mobile-apps img{
+        max-width: 100%; 
+        height: auto; 
+    }
+  }
+
+
+/* testimonials section */
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);/* Apply a linear gradient background color */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/* Stack the child elements vertically */
+    border-radius: 20px;/* Add rounded corners to the container */
+    margin-top: 250px;  
+    width: 1120px;
+    height: 425px;
+    z-index: 9;
+    position: relative;
+}
+
+.container-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px; 
+}
+
+
+
+/* Select the element with class "box" */
+.box {
+    padding: 0 10%;
+    gap: 50px;
+    /* background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);Set the background to a linear gradient */
+    border-radius: 20px;/* Set the border radius of the box */
+    overflow: hidden;  /* Hide any content that overflows the box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    
+    
+}
+
+.box-imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-left: -100px;
+
+    
+}
+
+.box img {
+    display:flex;
+    object-fit: cover;/* Scale the image while preserving aspect ratio to cover the entire box */
+    justify-content: center;/* Horizontally center the image */
+    padding-left: 0px;/* Remove left padding */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;/* Make the corners of the image round to create a circular shape */
+    border: 3px solid #fff;/* Add a white border with a thickness of 3px around the image */
+    object-position: center;   /* Set the position of the image to the center */
+}
+
+.box-content{
+    display: flex;
+    flex : 0.8;
+    text-align: left;/* Center align the text within the box */
+    padding: 10px 10px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    margin-left: 50px;
+   
+
+}
+
+.testimonials-elements1{
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    z-index: 9;
+
+}
+
+.testimonials-elements2{
+    position: absolute;
+    top: 250px;
+    left: -50px;
+    z-index: 1;
+
+}
+
+
+
+.testimonials-nav{
+    margin-top: 30px;
+}
+
+
+
+/* Responsive styles for testimonials */
+
+
+@media screen and (max-width: 768px) {
+    .container {
+      
+     display: flex;
+     width: 600px;
+      margin-top: 100px;
+    }
+  
+    .container-title {
+      font-size: 28px;
+      line-height: 40px;
+    }
+  
+    .box {
+      padding: 0 5%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .box-imageContainer {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .box img {
+      width: 100px;
+      height: 100px;
+      border-width: 2px;
+    }
+  
+    .box-content {
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    .testimonials-elements1 {
+      top: -15px;
+      right: -25px;
+    }
+  
+    .testimonials-elements2 {
+      top: 150px;
+      left: -25px;
+    }
+  }
+
+
+
+/* Check out our latest article section */
+
+.article{
+    display: flex;
+    flex-direction: column; /* Set the flex direction to column */
+    justify-content: center; /* Vertically center the flex items */
+    align-items: center; /* Horizontally center the flex items */
+    margin: 0 200px;
+}
+.column {
+    width: fit-content;/* Set the width of the container to fit its content */
+}
+.article-content{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;/* Set the main axis of the flex container to be vertical */
+    text-align: justify;/* Justify the text inside the container */
+    
+}
+
+.article-title{
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    position: relative;
+}
+
+.article-elements{
+
+    position: absolute;
+    top: 150px;
+    left: -390px;
+    z-index: -1;
+}
+
+.article-data{
+    display: flex;
+    flex-direction: row;/* Set the main axis of the flex container to be horizontal */
+    gap: 30px;
+}
+
+.article-card {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);/* Add a box shadow to the element */
+    width: 350px;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+
+.article-card-title {
+     color: #000000; 
+    font-size: 21px;
+    line-height: 32px;
+    margin-top: 20px;
+    font-weight: 700;  
+}
+
+.article-card-description {
+    
+    color: #7d7987;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    justify-content: center;   /* Center the content within the container horizontally */
+}
+
+.article-read{
+    color: #4089ED;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+
+.View-button{
+    
+    /* Center the content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+
+    border: 1.4px solid #458FF6;  /* Add border with thickness and color */
+    border-radius: 55px; /* Add rounded corners to the button */
+    background-color: white;
+        
+    color: #458FF6;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+
+    width: 200px;
+    height: 56px;
+    transition: box-shadow 0.3s ease-in-out; /* Add a box-shadow transition with a duration of 0.3 seconds */
+}
+
+/* Add hover effect */
+.View-button:hover{
+        box-shadow: 0 0 1px 1px #458FF6; /* Add a box-shadow to create a glow effect */
+        cursor: pointer; /* Change the cursor to a pointer */
+      
+}
+
+/* Responsive styles for article */
+@media screen and (max-width: 700px) {
+
+    .article {
+        margin: 0 20px;
+      }
+    
+    .article-title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .article-elements {
+        display: none;
+    }
+
+    .article-data {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .article-card {
+        width: 100%;
+       justify-content: center;
+    }
+
+    .article-card-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .article-card-description {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .article-read {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .View-button {
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+/* contact us section  */
+
+.Contact{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.Contact-title{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.contact-question{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px
+}
+
+/* Set the width, display and margin of the form element */
+  form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;/* Make the layout vertical */
+    margin-top: 40px;
+  }
+
+/* Style the label element */
+form label{
+    font-weight: 300;
+    font-size: 16px;
+}
+  /* Style the input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #7D7987;
+    border-radius: 4px;
+    box-sizing: border-box;/* Set the box sizing of the input fields to border-box */
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;/* Allow the textarea to be vertically resizable */
+  }
+
+  /* Style the submit button */
+  input[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 40px;/* Add padding to the submit button */
+    margin: auto;/* Center the submit button */
+
+    border: 1.4px solid #458FF6; /* Add a border with color */
+    border-radius: 55px;/* Round the corners of the submit button */
+    background-color: white;
+    color: #458FF6;
+    
+    font-weight: 700;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease-in-out;/* Add a transition for the box shadow effect */
+
+    line-height: 40px;
+  }
+
+  input[type="submit"]:hover {
+    box-shadow: 0 0 1px 1px #458FF6;/* Add a glow effect on hover */
+    cursor: pointer;/* Change cursor to pointer on hover */
+  }
+
+  /* Style the labels */
+  label {
+    font-weight: bold;
+  }
+
+ 
+/* Responsive styles for contact us form*/
+@media screen and (max-width: 700px) {
+    form {
+        max-width: 100%; /* Set the form to take full width on smaller screens */
+    }
+}
+
+
+/* footer section */
+
+  footer {
+    display:flex ;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%); /* Set the blue gradient background color */
+    color: #fff; /* Set the text color */
+    text-align: center; /* Center align the text */
+    padding: 120px 20px;
+    
+    justify-content: space-between;
+    margin-top: 80px;
+    position: relative;
+
+    
+  }
+
+   /* Style the Trafalgar content */
+.Trafalgar-content {
+	flex-basis: 30%;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+	margin-left: 10%;
+	gap: 50px;
+}
+
+
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+ 
+/* Style the Company, Region, and Help content */
+  .Company-content,
+  .Region-content,
+  .Help-content{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 60px;
+    flex-basis: 20%;
+  }
+
+
+/* Style the links inside Company, Region, and Help content */  
+  .Company-content a,
+  .Region-content a,
+  .Help-content a {
+        display: flex;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        color: white; /* Set the default color of the links */
+        text-decoration: none; /* Remove the underline from the links */
+        padding: 2px; 
+        margin-right: 10px; 
+        flex-direction: column;
+  }
+
+   
+  .footer-elements{
+
+    position: absolute;
+    z-index: 1;
+  bottom: 0;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
+      flex-wrap: wrap;
+      padding: 80px 20px;
+    }
+  
+    .Trafalgar-content {
+      flex-basis: 100%;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .Company-content,
+    .Region-content,
+    .Help-content {
+      flex-basis: 33.33%;
+      margin-top: 20px;
+    }
+  }
+ 
+  
+/* Style the horizontal rule */
+  hr{
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Virtual healthcare</title>
+		<!-- This sets the title of the project, which appears in the browser tab. -->
+		<link rel="stylesheet" href="./style.css" />
+		<!-- This links the project to an external css stylesheet. -->
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<img
+					src="./images/logo.svg"
+					alt="logo" /><!-- Trafalgar logo. -->
+
+				<div class="nav-list">
+					<!-- This is the navigation list. -->
+					<a class="active" href="#home">Home </a>
+					<!-- This is a link to the home section of the website. -->
+					<a href="#news">Find a doctor </a>
+					<a href="#contact">Apps </a>
+					<a href="#about">Testimonials </a>
+					<a href="#about">About us </a>
+				</div>
+			</nav>
+		</header>
+
+		<!--  button that scrolls the page to the top. -->
+		<button id="scrollToTopBtn">
+			<img
+				src="./images/scroll.svg"
+				alt="scroll button" /><!--icon for the scroll button. -->
+		</button>
+
+		<div class="elements">
+			<img src="./images/elements.svg" alt="elements image" />
+		</div>
+
+		<!-- Virtual healthcare heading, a content paragraph, and a button. -->
+
+		<section class="heading" id="heading">
+			<div class="heading-title">
+				<div>
+					<p class="title">Virtual healthcare for you</p>
+
+					<p class="heading-content">
+						Trafalgar provides progressive, and affordable
+						healthcare, accessible on mobile and online for everyone
+					</p>
+				</div>
+
+				<div>
+					<button class="consult-button">Consult today</button>
+				</div>
+
+				<!-- A button for consultation -->
+			</div>
+
+			<!-- Virtual healthcare image-->
+			<img src="./images/firstimg.svg" alt="firstimg" width="auto" />
+		</section>
+
+		<!-- Our service heading and cards -->
+
+		<section class="service" id="service">
+			<p class="service-title">Our service</p>
+
+			<img src="./images/servicesBgVector.svg" alt="" class="vector-bg" />
+
+			<hr
+				style="color: black; margin-top: 30px"
+				width="56px"
+				height="2px" />
+
+			<p class="service-content">
+				We provide to you the best choiches for you. Adjust it to your
+				health needs and make sure your undergo treatment with our
+				highly qualified doctors you can consult with us which type of
+				service is suitable for your health
+			</p>
+
+			<div class="service-data"></div>
+			<!-- adding cards using javascrpit -->
+		</section>
+
+		<!-- Section for Leading healthcare providers -->
+
+		<section class="healthcare" id="healthcare">
+			<img
+				class="healthcare-img"
+				src="./images/healthcare.svg"
+				alt="healthcare"
+				height="477"
+				width="650" />
+
+			<div class="healthcare-title">
+				<!-- Div for healthcare title and content -->
+				<p>Leading healthcare providers</p>
+				<div style="display: flex">
+					<hr width="56px" height="2px" border-radius="10px" />
+				</div>
+
+				<!-- Horizontal rule to separate title and content -->
+
+				<div class="healthcare-content">
+					<p>
+						Trafalgar provides progressive, and affordable
+						healthcare, accessible on mobile and online for
+						everyone. To us, it’s not just work. We take pride in
+						the solutions we deliver
+					</p>
+				</div>
+
+				<button class="Learnmore-button">Learn more</button>
+			</div>
+		</section>
+
+		<!-- Download our mobile apps section -->
+
+		<section class="mobile-apps" id="mobile-apps">
+			<div class="mobile-apps-title">
+				<!-- Create a div with class "mobile-apps-title" -->
+
+				<p>Download our mobile apps</p>
+
+				<div style="align-self: flex-start">
+					<hr width="56px" height="2px" border-radius="10px" />
+				</div>
+				<!-- Add a horizontal line -->
+
+				<p class="mobile-apps-content">
+					Our dedicated patient engagement app and web portal allow
+					you to access information instantaneously (no tedeous form,
+					long calls, or administrative hassle) and securely
+				</p>
+
+				<!-- Creating Download button -->
+
+				<button class="Download-button">
+					Download
+					<!-- Add the text "Download " -->
+					<img
+						src="./images/down-arrow.svg"
+						alt="down arrow" /><!-- Add an image of a down arrow with alternative text "down arrow" -->
+				</button>
+			</div>
+
+			<!-- mobile app image -->
+			<div class="mobile-apps">
+				<img
+					src="./images/mobile-apps.svg"
+					alt="mobile-apps"
+					height="434"
+					width="665" />
+			</div>
+		</section>
+
+		<!--testimonials section  -->
+
+		<section class="testimonials" id="testimonials">
+			<div class="container">
+				<div class="testimonials-elements1">
+					<!-- This element displays the design elements image -->
+					<img
+						src="./images/testimonials-elements.svg"
+						alt="elements image" />
+				</div>
+				<p class="container-title">What our customer are saying</p>
+				<!--  title for the testimonials section -->
+				<hr
+					style="border: 1px solid white"
+					width="56px"
+					height="2px"
+					border-radius="10px" />
+				<div class="box">
+					<!-- customer's image, name, and designation, as well as their feedback about the service -->
+					<div class="box-imageContainer">
+						<img
+							src="./images/testimonials-img.svg"
+							alt="testimonials-img" />
+						<div class="box-authorname">
+							<p style="font-weight: 700; font-size: 22px">
+								Edward Newgate
+							</p>
+							<p>Founder Circle</p>
+						</div>
+					</div>
+
+					<p class="box-content">
+						“Our dedicated patient engagement app and web portal
+						allow you to access information instantaneously (no
+						tedeous form, long calls, or administrative hassle) and
+						securely”
+					</p>
+				</div>
+				<div class="testimonials-elements2">
+					<!-- This element displays the design elements image -->
+					<img src="./images/elements.svg" alt="elements image" />
+				</div>
+			</div>
+
+			<div class="testimonials-nav">
+				<!-- This element displays the navigation image for the testimonials section -->
+				<img
+					src="./images/testimonials-nav.svg"
+					alt="testimonials-nav" />
+			</div>
+		</section>
+
+		<!-- latest Article title section -->
+
+		<section class="article" id="article">
+			<div class="article-title">
+				<!-- Article title -->
+				<div>
+					<p>Check out our latest article</p>
+					<hr
+						style="color: black"
+						width="56px"
+						height="2px"
+						border-radius="5px" />
+				</div>
+
+				<div class="article-elements">
+					<!-- This element displays the design elements image -->
+					<img
+						src="./images/article-element.svg"
+						alt="elements image" />
+				</div>
+			</div>
+
+			<div class="article-data">
+				<!-- Article cards -->
+				<div class="article-card">
+					<!-- First article card -->
+					<img src="./images/Disease-detection.svg" alt="disease" />
+					<div class="article-content">
+						<b class="article-card-title"
+							>Disease detection, check up in the laboratory</b
+						>
+						<p class="article-card-description">
+							In this case, the role of the health laboratory is
+							very important to do a disease detection...
+						</p>
+						<p class="article-read">
+							Read more
+							<img
+								src="./images/side-arrow.svg"
+								alt="read more" />
+						</p>
+					</div>
+				</div>
+				<div class="article-card">
+					<!-- Second article card  -->
+					<img src="./images/Disease-detection.svg" alt="disease" />
+					<div class="article-content">
+						<b class="article-card-title"
+							>Herbal medicines that are safe for consumption</b
+						>
+						<p class="article-card-description">
+							Herbal medicine is very widely used at this time
+							because of its very good for your health...
+						</p>
+						<p class="article-read">
+							Read more
+							<img
+								src="./images/side-arrow.svg"
+								alt="read more" />
+						</p>
+					</div>
+				</div>
+				<div class="article-card">
+					<!-- Third article card  -->
+					<img src="./images/Disease-detection.svg" alt="disease" />
+					<div class="article-content">
+						<b class="article-card-title"
+							>Natural care for healthy facial skin</b
+						>
+						<p class="article-card-description">
+							A healthy lifestyle should start from now and also
+							for your skin health. There are some...
+						</p>
+						<p class="article-read">
+							Read more
+							<img
+								src="./images/side-arrow.svg"
+								alt="read more" />
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<button class="View-button">View all</button
+			><!-- View all button  -->
+		</section>
+
+		<!-- contact us section  -->
+		<section class="Contact" id="Contact">
+			<div class="Contact-title">
+				<p>Contact us</p>
+
+				<hr style="color: black" width="56px" height="3px" />
+				<!--  horizontal line  -->
+			</div>
+			<p class="contact-question">
+				Have any questions? We’d love to hear from you.
+			</p>
+
+			<!-- Creating form  -->
+			<form>
+				<div style="display: flex; gap: 20px">
+					<div>
+						<label for="name">Your Name </label
+						><!-- Creates a label with the text "Your Name". -->
+						<input
+							type="text"
+							id="name"
+							name="name"
+							required /><!-- Creates an input field for name  -->
+					</div>
+
+					<div>
+						<label for="phone">Phone No. </label>
+						<input type="tel" id="phone" name="phone" required />
+					</div>
+				</div>
+
+				<div>
+					<label for="email">Email ID </label>
+					<input type="email" id="email" name="email" required />
+				</div>
+				<div>
+					<label for="message">Your message </label>
+					<textarea
+						id="message"
+						name="message"
+						rows="10"
+						required></textarea>
+				</div>
+				<div><input type="submit" value="Send Message" /></div>
+			</form>
+		</section>
+
+		<!-- Define the footer section  -->
+		<footer>
+			<div class="Trafalgar-content">
+				<div class="logo">
+					<div
+						style="
+							position: absolute;
+							background-color: white;
+							border-radius: 50%;
+
+							color: #5b9bf3;
+							padding: 10px 20px;
+							font-weight: 700;
+							font-size: 30px;
+						">
+						T
+					</div>
+					<div style="position: absolute; left: 15%">
+						<h1>Trafalgar</h1>
+					</div>
+				</div>
+
+				<p>
+					Trafalgar provides progressive, and affordable healthcare,
+					accessible on mobile and online for everyone
+				</p>
+				<p style="width: 100%">
+					&copy; Trafalgar PTY LTD 2020. All rights reserved
+				</p>
+			</div>
+
+			<div class="Company-content">
+				<!-- Create a div with class "Company-content" -->
+				<p>Company</p>
+
+				<a href="#About">About</a>
+				<a href="#testimonials">testimonials</a>
+				<a href="#doctor">Find a doctor</a>
+				<a href="#Apps">Apps</a>
+			</div>
+			<div class="Region-content">
+				<p>Region</p>
+
+				<a href="#Indonesia">Indonesia</a>
+				<a href="#Singapore">Singapore</a>
+				<a href="#Hongkong">Hongkong</a>
+				<a href="#Canada">Canada</a>
+			</div>
+
+			<div class="Help-content">
+				<p>Help</p>
+
+				<a href="#Help">Help center</a>
+				<a href="#Contact">Contact support</a>
+				<a href="#Instructions">Instructions</a>
+				<a href="#works">How it works</a>
+			</div>
+			<div class="footer-elements">
+				<!-- This element displays the design elements image -->
+				<img src="./images/article-element.svg" alt="elements image" />
+			</div>
+		</footer>
+		<script src="./script.js"></script>
+		<!-- Add a script tag to link to an external script file -->
+	</body>
+</html>
